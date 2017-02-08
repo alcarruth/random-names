@@ -3,7 +3,7 @@
 
 import sys, os, json
 
-app_dir = '/home/carruth/random-name-generator'
+app_dir = '/opt/git/random-names'
 os.chdir(app_dir)
 sys.path.insert(0, app_dir)
 
@@ -23,7 +23,7 @@ template = """
 <div id="main">
 <h2> Random Name Generator </h2>
 <h3 id="random-name"> %s </h3>
-<a href="/random-name-generator"> random.name.next() </a>
+<a href="/random-names"> random.name.next() </a>
 <h3> Sources </h3>
 
 <p>
