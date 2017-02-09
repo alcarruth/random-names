@@ -9,41 +9,9 @@ sys.path.insert(0, app_dir)
 
 from names import random_name
 
-template = """
-<!DOCTYPE html>
-<html>
-
-<head>
-<meta charset="UTF-8">
-<title> Random Name Generator </title>
-<link rel="stylesheet" href="/style.css">
-</head>
-
-<body>
-<div id="main">
-<h2> Random Name Generator </h2>
-<h3 id="random-name"> %s </h3>
-<a href="/random-names"> random.name.next() </a>
-<h3> Sources </h3>
-
-<p>
- The generator code is a really simple python program that randomly
-selects
-<ul>
-<li>  a first name from a list containing 1000 female and 1000 male
-first names, </li>
-<li> and a surname from a list containing 1000 surnames.</li>
-</ul>
-
-These lists were obtained from 
-<a href="http://names.mongabay.com/data/1000.html" target="_blank">
-http://names.mongabay.com/data/1000.html </a> </p>
-
-</div>
-</body>
-
-</html>
-"""
+_ = open('app/main.html', 'r')
+template = _.read()
+_.close()
 
 # The application interface is a callable object
 def application ( environ, start_response):

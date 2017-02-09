@@ -1,0 +1,53 @@
+/*
+  box-sizing simplifies box arithmetic by including border and
+  padding in the box dimensions
+  */
+
+body, div, ul, li, p, h1, h2, h3, h4, h5, h6 {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+}
+
+body {
+    background: #ddd;
+}
+
+div#main {
+    max-width: 600px;
+    width: 95%;
+    background: #fff;
+    border: 1px solid black;
+    margin: auto;
+    padding: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+a:hover {
+    color: red;
+}
+
+#random-name {
+    color: red;
+    font-family: sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: xx-large;
+    padding-left: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#random-next {
+    color: blue;
+    font-family: monospace;
+    font-weight: normal;
+    font-size: Larger;
+    padding-left: 30px;
+}

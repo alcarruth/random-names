@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> Random Name Generator </title>
+    <base href="/random-names/">
+    <link rel="stylesheet" href="static/style.css">
+</head>
+
+<body>
+    <div id="main">
+        <h2> Random Name Generator </h2>
+
+        <p id="random-name"> %s </p>
+        <p id="random-next"> <a href="/random-names"> random_name.next() </a> </p>
+
+        <h3> Notes </h3>
+        <p>
+            The generator code is a simple python program that
+            randomly selects a first name from a list containing 1000
+            female and 1000 male first names, and a surname from a
+            list containing 1000 surnames.  These lists were obtained
+            from
+            <a href="http://names.mongabay.com/data/1000.html" target="_blank">
+                Mongabay.com </a>
+        </p>
+    </div>
+</body>
+
+</html>
